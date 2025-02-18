@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            background-color: antiquewhite;
+            background-image: url(aes\ bg.png);
+            background-size:cover;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            overflow: scroll;
+           
+        }
+        .box{
+            width: 300px;
+           min-height: 300px;
+           max-height: 300px;
+            background-color:brown;
+            background-image: url(autumn.png);
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+            border-radius: 10px;
+            box-shadow: 0 0 20px grey;
+            padding: 20px;
+
+        }
+        .box2{
+            width: 300px;
+           min-height: 300px;
+           max-height: 300px;
+            background-color:brown;
+            background-image: url(snow.png);
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+            border-radius: 10px;
+            box-shadow: 0 0 20px grey;
+            padding: 20px;
+            
+        }
+
+        .box3{
+            width: 300px;
+           min-height: 300px;
+           max-height: 300px;
+            background-color:brown;
+            background-image:url(spring.png) ;
+            background-size:cover;
+            /* background-repeat: no-repeat; */
+            border-radius: 10px;
+            box-shadow: 0 0 20px grey;
+            padding: 20px;
+        }
+        .image1{
+            width: 100%;
+        }
+        
+        .heading{
+            color: white;
+            font-size: 25px;
+            text-shadow: 0 0 20px black;
+        }
+        .sub-heading{
+            color: white;
+            text-shadow: 0 0 10px;
+        }
+        button{
+
+            background-color:white;
+            color: black;
+            padding: 12px;
+            border-radius: 7px;
+            cursor: pointer;
+            margin-top: 15px;
+            box-shadow: 0 0 10px black;
+        }
+    
+
+        @media(max-width:1000px)
+        {
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
+        @media(max-width:500px){
+            .container{
+                flex-direction: row;
+            }
+            .heading{
+                font-size: 15px;
+            }
+            button{
+                padding: 6px;
+                font-size: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="heading">AUTUMN.</h1>
+            <p class="sub-heading">Keep calm and enjoy fall.</p>
+
+            <button>Know more <i class="fa-solid fa-arrow-right"></i></button>
+
+
+        </div>
+       
+            <div class="box2">
+                <h1 class="heading">WINTER.</h1>
+                <p class="sub-heading">When snow falls , nature listens.</p>
+    
+                <button>Know more <i class="fa-solid fa-arrow-right"></i></button>
+
+    
+    </div>
+    
+        <div class="box3">
+            <h1 class="heading">SPRING.</h1>
+            <p class="sub-heading">Spring sings life's new melody.</p>
+
+            <button>Know more <i class="fa-solid fa-arrow-right"></i></button>
+
+
+
+        </div>
+    
+    
+</body>
+</html>
